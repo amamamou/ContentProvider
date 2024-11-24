@@ -1,15 +1,12 @@
 package com.example.app1;
 
-import java.sql.Time;
-import java.util.Date;
-
 public class Evenement {
     private int id;
     private String titre;
     private String lieu;
-    private Date date ;
-    private Time heure_debut;
-    private Time heure_fin;
+    private String date ;
+    private String heure_debut;
+    private String heure_fin;
     public Evenement (){}
     public Evenement (String titre,String lieu){
         this.titre=titre;
@@ -43,29 +40,29 @@ public class Evenement {
     }
 
     // Getter and Setter for date
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
     // Getter and Setter for heure_debut
-    public Time getHeure_debut() {
+    public String getHeure_debut() {
         return heure_debut;
     }
 
-    public void setHeure_debut(Time heure_debut) {
+    public void setHeure_debut(String heure_debut) {
         this.heure_debut = heure_debut;
     }
 
     // Getter and Setter for heure_fin
-    public Time getHeure_fin() {
+    public String getHeure_fin() {
         return heure_fin;
     }
 
-    public void setHeure_fin(Time heure_fin) {
+    public void setHeure_fin(String heure_fin) {
         this.heure_fin = heure_fin;
     }
 }
